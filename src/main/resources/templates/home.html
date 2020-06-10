@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Carga de Archivo</h1>
+	<hr>
+	<form th:action="@{/save}" enctype="multipart/form-data" method="post">
+		
+		Archivo: <input type="file" class="form-control-file"
+			name="archivoImagen" id="archivoImagen">
+		<br>	
+		<button type="submit" class="btn btn-primary">Guardar</button>
+	</form>
+	<br>
+    <a th:href="@{/listado}">Listado</a>
+</body>
+</html>
